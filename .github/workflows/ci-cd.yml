@@ -30,7 +30,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('myapp/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Update patch version
+      - name: Update app version
         working-directory: ./myapp
         run: |
           CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
