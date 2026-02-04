@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 env:
-  IMAGE_NAME: rafael-devops-exercise
+  IMAGE_NAME: dmitri-hello-world
 
 jobs:
   build-and-deploy:

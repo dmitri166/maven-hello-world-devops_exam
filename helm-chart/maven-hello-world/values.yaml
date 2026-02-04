@@ -1,5 +1,5 @@
 image:
-  repository: dmitrik2026/rafael-devops-exercise
+  repository: dmitri-hello-world
   pullPolicy: IfNotPresent
   tag: ""
 

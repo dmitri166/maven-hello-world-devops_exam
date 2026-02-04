@@ -38,8 +38,8 @@ The image is built using a multi-stage `Dockerfile` and runs as a non-root user.
 Example local build:
 
 ```bash
-docker build -t rafael-devops-exercise:local ./myapp
-docker run --rm rafael-devops-exercise:local
+docker build -t dmitri-hello-world:local ./myapp
+docker run --rm dmitri-hello-world:local
 ```
 
 ## CI/CD (GitHub Actions)
@@ -64,8 +64,8 @@ Required GitHub repository secrets:
 
 Docker image tags produced:
 
-- `dmitrik2026/rafael-devops-exercise:<version>`
-- `dmitrik2026/rafael-devops-exercise:latest`
+- `dmitrik2026/dmitri-hello-world:<version>`
+- `dmitrik2026/dmitri-hello-world:latest`
 
 ## Helm (Kubernetes)
 
@@ -75,7 +75,7 @@ Install:
 
 ```bash
 helm install maven-hello-world ./helm-chart/maven-hello-world \
-  --set image.repository=dmitrik2026/rafael-devops-exercise \
+  --set image.repository=dmitrik2026/dmitri-hello-world \
   --set image.tag=1.0.1
 ```
 
