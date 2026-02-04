@@ -1,5 +1,5 @@
 image:
-  repository: dmitri-hello-world
+  repository: dmitrik2026/dmitri-hello-world
   pullPolicy: IfNotPresent
   tag: ""
 
