@@ -2,7 +2,7 @@
 
 This repository contains a minimal Java/Maven “Hello World” application and a CI/CD pipeline that:
 
-- Builds and tests the app with Maven
+- Builds and tests the app with Maven (tests run in CI)
 - Packages a JAR artifact
 - Builds a Docker image (multi-stage) that runs as a non-root user
 - Tags the Docker image with the computed JAR version
@@ -76,7 +76,7 @@ Install:
 ```bash
 helm install maven-hello-world ./helm-chart/maven-hello-world \
   --set image.repository=dmitrik2026/dmitri-hello-world \
-  --set image.tag=1.0.1
+  --set image.tag=1.0.0
 ```
 
 View Job logs:
