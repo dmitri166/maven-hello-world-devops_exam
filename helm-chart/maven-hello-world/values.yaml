@@ -1,31 +1,11 @@
 image:
   repository: dmitrik2026/dmitri-hello-world
-  pullPolicy: IfNotPresent
   tag: ""
-
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+  pullPolicy: IfNotPresent
 
 serviceAccount:
   create: false
-  annotations: {}
   name: ""
-
-podAnnotations: {}
-
-podSecurityContext:
-  runAsNonRoot: true
-  runAsUser: 1000
-  fsGroup: 1000
-
-securityContext:
-  allowPrivilegeEscalation: false
-  runAsNonRoot: true
-  runAsUser: 1000
-  capabilities:
-    drop:
-    - ALL
 
 job:
   backoffLimit: 1
@@ -38,9 +18,3 @@ resources:
   requests:
     cpu: 250m
     memory: 256Mi
-
-nodeSelector: {}
-
-tolerations: []
-
-affinity: {}
