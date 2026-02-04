@@ -52,7 +52,7 @@ What it does:
 - Increments the patch version (e.g. `1.0.0` -> `1.0.1`) for the build
 - Builds/tests/packages and uploads the JAR as an artifact
 - Builds a Docker image tagged with the computed version
-- On `push` events to `main`/`master`:
+- On `push` events to `master`:
   - Logs in to Docker Hub
   - Pushes the image
   - Pulls it back and runs it as a smoke test
