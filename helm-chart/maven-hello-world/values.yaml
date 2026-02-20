@@ -7,6 +7,12 @@ serviceAccount:
   create: false
   name: ""
 
+service:
+  enabled: false
+  type: ClusterIP
+  port: 8080
+  targetPort: 8080
+
 job:
   backoffLimit: 1
   restartPolicy: Never
